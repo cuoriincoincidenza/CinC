@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CuoriInCoincidenza — Storie d'amore, incontri e intrighi tra binari e stazioni ferroviarie. Dove ogni coincidenza può diventare destino.">
+    <meta name="keywords" content="storie d'amore, treni, stazioni, coincidenze, romantico, ferrovia, incontri">
+    <title>CuoriInCoincidenza — Storie d'Amore sui Binari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated particles background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">♥</span><span class="logo-green">Cuori</span><span
+                    class="logo-white">In</span><span class="logo-red">Coincidenza</span><span
+                    class="logo-com-wrapper"><span class="logo-fs">FS</span><span class="logo-com">.com</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#storie">Storie</a></li>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#invia">Invia la Tua</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Logo -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="CuoriInCoincidenza - Dove i cuori si incontrano" class="hero-logo"
+                    id="heroLogo">
+            </div>
+            <!-- Text headers removed as they are part of the logo image -->
+            <div class="hero-cta">
+                <a href="#storie" class="btn btn-primary">Scopri le Storie</a>
+                <a href="#invia" class="btn btn-outline">Racconta la Tua</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scorri per esplorare</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="intro-content">
+                <span class="section-tag">✦ Benvenuti</span>
+                <h2>Ogni treno nasconde una storia</h2>
+                <p class="intro-text">
+                    Tra il rumore dei binari e il fischio del treno, nascono storie che il destino ha scritto
+                    prima ancora che i protagonisti si incontrassero. <em>CuoriInCoincidenza</em> raccoglie
+                    queste storie — fatte di sguardi rubati sui vagoni, di coincidenze in stazione, di amori
+                    nati tra una partenza e un arrivo.
+                </p>
+                <div class="intro-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="127">0</span>
+                        <span class="stat-label">Storie Raccolte</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="43">0</span>
+                        <span class="stat-label">Stazioni</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="89">0</span>
+                        <span class="stat-label">Treni</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories" id="storie">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">✦ Le Storie</span>
+                <h2>Coincidenze del Cuore</h2>
+                <p>Ogni storia è un viaggio. Ogni viaggio è un'opportunità.</p>
+            </div>
+
+            <div class="stories-grid">
+                <!-- Story Card 1 -->
+                <article class="story-card story-card--featured">
+                    <div class="story-card__image">
+                        <div class="story-placeholder" style="--accent: #ff4d6d;">
+                            <span class="story-emoji">🚂</span>
+                        </div>
+                        <span class="story-card__tag">In Evidenza</span>
+                    </div>
+                    <div class="story-card__content">
+                        <div class="story-card__meta">
+                            <span>📍 Stazione di Milano Centrale</span>
+                            <span>•</span>
+                            <span>Binario 5</span>
+                        </div>
+                        <h3>Il Treno delle 7:42</h3>
+                        <p>Ogni mattina, stesso treno, stesso vagone. I loro sguardi si incrociavano tra le pagine di un
+                            libro e lo schermo di un telefono. Finché un giorno, un ritardo di venti minuti cambiò
+                            tutto…</p>
+                        <a href="storia.html?id=1" class="story-card__link">Leggi la storia →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 2 -->
+                <article class="story-card">
+                    <div class="story-card__image">
+                        <div class="story-placeholder" style="--accent: #7b2cbf;">
+                            <span class="story-emoji">🌧️</span>
+                        </div>
+                    </div>
+                    <div class="story-card__content">
+                        <div class="story-card__meta">
+                            <span>📍 Roma Termini</span>
+                            <span>•</span>
+                            <span>Sala d'attesa</span>
+                        </div>
+                        <h3>Pioggia a Termini</h3>
+                        <p>Un temporale improvviso, un solo ombrello e la decisione di condividerlo. A volte il destino
+                            ha il sapore del caffè della stazione…</p>
+                        <a href="storia.html?id=2" class="story-card__link">Leggi la storia →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 3 -->
+                <article class="story-card">
+                    <div class="story-card__image">
+                        <div class="story-placeholder" style="--accent: #f77f00;">
+                            <span class="story-emoji">🎵</span>
+                        </div>
+                    </div>
+                    <div class="story-card__content">
+                        <div class="story-card__meta">
+                            <span>📍 Firenze Santa Maria Novella</span>
+                            <span>•</span>
+                            <span>Frecciarossa</span>
+                        </div>
+                        <h3>La Melodia del Vagone 6</h3>
+                        <p>Lei ascoltava musica senza cuffie. Lui la riconobbe — era la canzone del loro primo incontro,
+                            anni prima, in un altro treno…</p>
+                        <a href="storia.html?id=3" class="story-card__link">Leggi la storia →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 4 -->
+                <article class="story-card">
+                    <div class="story-card__image">
+                        <div class="story-placeholder" style="--accent: #2ec4b6;">
+                            <span class="story-emoji">💌</span>
+                        </div>
+                    </div>
+                    <div class="story-card__content">
+                        <div class="story-card__meta">
+                            <span>📍 Napoli Centrale</span>
+                            <span>•</span>
+                            <span>Intercity Notte</span>
+                        </div>
+                        <h3>Lettere dal Finestrino</h3>
+                        <p>Un biglietto lasciato sul sedile, un numero di telefono e le parole: "Se il destino esiste,
+                            ci rivedremo su questo treno"…</p>
+                        <a href="storia.html?id=4" class="story-card__link">Leggi la storia →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Quote -->
+    <section class="parallax-quote">
+        <div class="parallax-overlay"></div>
+        <blockquote>
+            <p>"L'amore è il treno che non aspetti, ma che arriva sempre al momento giusto."</p>
+            <cite>— CuoriInCoincidenza</cite>
+        </blockquote>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="chi-siamo">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">✦ Chi Siamo</span>
+                    <h2>Collezionisti di Coincidenze</h2>
+                    <p>
+                        Siamo un gruppo di sognatori e viaggiatori che crede nel potere degli incontri casuali.
+                        Ogni giorno, milioni di persone salgono su treni e attraversano stazioni senza sapere
+                        che il prossimo amore potrebbe sedersi accanto a loro.
+                    </p>
+                    <p>
+                        <em>CuoriInCoincidenza</em> nasce dall'idea che le storie più belle non vengono scritte —
+                        vengono <strong>vissute</strong>. Noi le raccogliamo, le custodiamo e le condividiamo
+                        con chi, come noi, crede che ogni coincidenza sia in realtà un appuntamento del destino.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🚉</span>
+                            <div>
+                                <h4>Storie Autentiche</h4>
+                                <p>Racconti reali di persone che si sono incontrate sui treni e nelle stazioni.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💕</span>
+                            <div>
+                                <h4>Comunità Romantica</h4>
+                                <p>Uno spazio per chi crede nell'amore e nel fascino dei viaggi in treno.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✍️</span>
+                            <div>
+                                <h4>Racconta la Tua</h4>
+                                <p>Invia la tua storia e diventa parte della nostra collezione di coincidenze.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="about-card__inner">
+                            <span class="about-card__emoji">🚂💕</span>
+                            <p class="about-card__quote">"Ci siamo incontrati al binario 3. Oggi viviamo insieme."</p>
+                            <span class="about-card__author">— Marco & Giulia, 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Section -->
+    <section class="submit" id="invia">
+        <div class="container">
+            <div class="submit-wrapper">
+                <div class="section-header section-header--light">
+                    <span class="section-tag">✦ La Tua Storia</span>
+                    <h2>Racconta la Tua Coincidenza</h2>
+                    <p>Hai vissuto un incontro speciale in treno o in stazione? Condividilo con noi.</p>
+                </div>
+                <form class="submit-form" id="submitForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Il tuo nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Come vuoi essere chiamato/a" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="la-tua@email.it" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="stazione">Dove è successo?</label>
+                        <input type="text" id="stazione" name="stazione"
+                            placeholder="Es. Stazione di Bologna Centrale, Frecciarossa 9612...">
+                    </div>
+                    <div class="form-group">
+                        <label for="storia">La tua storia</label>
+                        <textarea id="storia" name="storia" rows="6"
+                            placeholder="Raccontaci la tua coincidenza del cuore..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <span>Invia la Tua Storia</span>
+                        <span class="btn-icon">♥</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contatti">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <span class="logo-icon">♥</span><span class="logo-green">Cuori</span><span
+                                class="logo-white">In</span><span class="logo-red">Coincidenza</span><span
+                                class="logo-com-wrapper"><span class="logo-fs">FS</span><span
+                                    class="logo-com">.com</span></span>
+                        </a>
+                        <p>Dove ogni binario porta al cuore.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                                    <circle cx="12" cy="12" r="5" />
+                                    <circle cx="17.5" cy="6.5" r="1.5" />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Esplora</h4>
+                        <ul>
+                            <li><a href="#storie">Le Storie</a></li>
+                            <li><a href="#chi-siamo">Chi Siamo</a></li>
+                            <li><a href="#invia">Invia la Tua</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Contatti</h4>
+                        <ul>
+                            <li><a href="mailto:info@cuoriincoincidenza.it">info@cuoriincoincidenza.it</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 CuoriInCoincidenza. Tutti i diritti riservati. Fatto con ♥ tra un treno e l'altro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
