@@ -85,6 +85,26 @@
             opacity: 0;
         }
 
+        /* Desktop: larger parchment */
+        @media (min-width: 1024px) {
+            .parchment-wrapper {
+                max-width: 820px;
+            }
+
+            .parchment {
+                padding: 56px 64px;
+            }
+
+            .story-title {
+                font-size: 2.2rem;
+            }
+
+            .story-text {
+                font-size: 1.12rem;
+                line-height: 1.95;
+            }
+        }
+
         @keyframes parchment-entrance {
             from {
                 opacity: 0;
@@ -165,51 +185,53 @@
            ============================================ */
         .corner-heart {
             position: absolute;
-            width: 62px;
-            height: 62px;
+            width: 100px;
+            height: 100px;
             z-index: 3;
         }
 
         .corner-heart--tl {
-            top: -14px;
-            left: -14px;
+            top: -30px;
+            left: -30px;
         }
 
         .corner-heart--tr {
-            top: -14px;
-            right: -14px;
+            top: -30px;
+            right: -30px;
         }
 
         .corner-heart--bl {
-            bottom: -14px;
-            left: -14px;
+            bottom: -30px;
+            left: -30px;
         }
 
         .corner-heart--br {
-            bottom: -14px;
-            right: -14px;
+            bottom: -30px;
+            right: -30px;
         }
 
-        .corner-heart svg {
+        .corner-heart img {
             width: 100%;
             height: 100%;
+            object-fit: contain;
+            mix-blend-mode: multiply;
             filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.28));
             animation: heartbeat 2.8s ease-in-out infinite;
         }
 
-        .corner-heart--tl svg {
+        .corner-heart--tl img {
             animation-delay: 0s;
         }
 
-        .corner-heart--tr svg {
+        .corner-heart--tr img {
             animation-delay: 0.5s;
         }
 
-        .corner-heart--bl svg {
+        .corner-heart--bl img {
             animation-delay: 1.0s;
         }
 
-        .corner-heart--br svg {
+        .corner-heart--br img {
             animation-delay: 1.5s;
         }
 
@@ -485,144 +507,27 @@
             <!-- Parchment body -->
             <div class="parchment" id="parchment">
 
-                <!-- Corner hearts: V1 style — soft filled teal, thin line sleepers, 1 red heart -->
+                <!-- Corner hearts: logo image -->
 
                 <!-- Top Left -->
                 <div class="corner-heart corner-heart--tl">
-                    <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26,44 C26,44 6,30 6,18 C6,12 10,8 15,8 C19,8 23,10 26,14 C29,10 33,8 37,8 C42,8 46,12 46,18 C46,30 26,44 26,44 Z"
-                            stroke="#4a7a85" stroke-width="2.2" fill="#d4eaf0" opacity="0.85" />
-                        <path
-                            d="M26,38 C26,38 11,26 11,18 C11,14 14,11 18,11 C21.5,11 24,13 26,16.5 C28,13 30.5,11 34,11 C38,11 41,14 41,18 C41,26 26,38 26,38 Z"
-                            stroke="#4a7a85" stroke-width="1.5" fill="none" opacity="0.6" />
-                        <g stroke="#8b4c3c" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
-                            <line x1="26" y1="15.5" x2="26" y2="18.5" />
-                            <line x1="22.5" y1="16.5" x2="23.5" y2="19.2" />
-                            <line x1="19.5" y1="18.5" x2="21.2" y2="20.8" />
-                            <line x1="17.2" y1="21.5" x2="19.5" y2="23" />
-                            <line x1="15.8" y1="25" x2="18.5" y2="25.8" />
-                            <line x1="15.5" y1="29" x2="18.2" y2="29" />
-                            <line x1="16.8" y1="33" x2="19.2" y2="31.8" />
-                            <line x1="19.2" y1="36.5" x2="21.2" y2="34.8" />
-                            <line x1="22.5" y1="39.2" x2="23.8" y2="37.2" />
-                            <line x1="29.5" y1="16.5" x2="28.5" y2="19.2" />
-                            <line x1="32.5" y1="18.5" x2="30.8" y2="20.8" />
-                            <line x1="34.8" y1="21.5" x2="32.5" y2="23" />
-                            <line x1="36.2" y1="25" x2="33.5" y2="25.8" />
-                            <line x1="36.5" y1="29" x2="33.8" y2="29" />
-                            <line x1="35.2" y1="33" x2="32.8" y2="31.8" />
-                            <line x1="32.8" y1="36.5" x2="30.8" y2="34.8" />
-                            <line x1="29.5" y1="39.2" x2="28.2" y2="37.2" />
-                        </g>
-                        <path
-                            d="M26,21 C26,21 22,18 22,15.5 C22,13.5 23.5,12 25,12 C25.5,12 26,12.3 26,12.3 C26,12.3 26.5,12 27,12 C28.5,12 30,13.5 30,15.5 C30,18 26,21 26,21Z"
-                            fill="#c9184a" opacity="0.85" />
-                    </svg>
+                    <img src="assets/logo.png" alt="CuoriInCoincidenza" />
                 </div>
 
                 <!-- Top Right -->
                 <div class="corner-heart corner-heart--tr">
-                    <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26,44 C26,44 6,30 6,18 C6,12 10,8 15,8 C19,8 23,10 26,14 C29,10 33,8 37,8 C42,8 46,12 46,18 C46,30 26,44 26,44 Z"
-                            stroke="#4a7a85" stroke-width="2.2" fill="#d4eaf0" opacity="0.85" />
-                        <path
-                            d="M26,38 C26,38 11,26 11,18 C11,14 14,11 18,11 C21.5,11 24,13 26,16.5 C28,13 30.5,11 34,11 C38,11 41,14 41,18 C41,26 26,38 26,38 Z"
-                            stroke="#4a7a85" stroke-width="1.5" fill="none" opacity="0.6" />
-                        <g stroke="#8b4c3c" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
-                            <line x1="26" y1="15.5" x2="26" y2="18.5" />
-                            <line x1="22.5" y1="16.5" x2="23.5" y2="19.2" />
-                            <line x1="19.5" y1="18.5" x2="21.2" y2="20.8" />
-                            <line x1="17.2" y1="21.5" x2="19.5" y2="23" />
-                            <line x1="15.8" y1="25" x2="18.5" y2="25.8" />
-                            <line x1="15.5" y1="29" x2="18.2" y2="29" />
-                            <line x1="16.8" y1="33" x2="19.2" y2="31.8" />
-                            <line x1="19.2" y1="36.5" x2="21.2" y2="34.8" />
-                            <line x1="22.5" y1="39.2" x2="23.8" y2="37.2" />
-                            <line x1="29.5" y1="16.5" x2="28.5" y2="19.2" />
-                            <line x1="32.5" y1="18.5" x2="30.8" y2="20.8" />
-                            <line x1="34.8" y1="21.5" x2="32.5" y2="23" />
-                            <line x1="36.2" y1="25" x2="33.5" y2="25.8" />
-                            <line x1="36.5" y1="29" x2="33.8" y2="29" />
-                            <line x1="35.2" y1="33" x2="32.8" y2="31.8" />
-                            <line x1="32.8" y1="36.5" x2="30.8" y2="34.8" />
-                            <line x1="29.5" y1="39.2" x2="28.2" y2="37.2" />
-                        </g>
-                        <path
-                            d="M26,21 C26,21 22,18 22,15.5 C22,13.5 23.5,12 25,12 C25.5,12 26,12.3 26,12.3 C26,12.3 26.5,12 27,12 C28.5,12 30,13.5 30,15.5 C30,18 26,21 26,21Z"
-                            fill="#c9184a" opacity="0.85" />
-                    </svg>
+                    <img src="assets/logo.png" alt="CuoriInCoincidenza" />
                 </div>
 
                 <!-- Bottom Left -->
                 <div class="corner-heart corner-heart--bl">
-                    <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26,44 C26,44 6,30 6,18 C6,12 10,8 15,8 C19,8 23,10 26,14 C29,10 33,8 37,8 C42,8 46,12 46,18 C46,30 26,44 26,44 Z"
-                            stroke="#4a7a85" stroke-width="2.2" fill="#d4eaf0" opacity="0.85" />
-                        <path
-                            d="M26,38 C26,38 11,26 11,18 C11,14 14,11 18,11 C21.5,11 24,13 26,16.5 C28,13 30.5,11 34,11 C38,11 41,14 41,18 C41,26 26,38 26,38 Z"
-                            stroke="#4a7a85" stroke-width="1.5" fill="none" opacity="0.6" />
-                        <g stroke="#8b4c3c" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
-                            <line x1="26" y1="15.5" x2="26" y2="18.5" />
-                            <line x1="22.5" y1="16.5" x2="23.5" y2="19.2" />
-                            <line x1="19.5" y1="18.5" x2="21.2" y2="20.8" />
-                            <line x1="17.2" y1="21.5" x2="19.5" y2="23" />
-                            <line x1="15.8" y1="25" x2="18.5" y2="25.8" />
-                            <line x1="15.5" y1="29" x2="18.2" y2="29" />
-                            <line x1="16.8" y1="33" x2="19.2" y2="31.8" />
-                            <line x1="19.2" y1="36.5" x2="21.2" y2="34.8" />
-                            <line x1="22.5" y1="39.2" x2="23.8" y2="37.2" />
-                            <line x1="29.5" y1="16.5" x2="28.5" y2="19.2" />
-                            <line x1="32.5" y1="18.5" x2="30.8" y2="20.8" />
-                            <line x1="34.8" y1="21.5" x2="32.5" y2="23" />
-                            <line x1="36.2" y1="25" x2="33.5" y2="25.8" />
-                            <line x1="36.5" y1="29" x2="33.8" y2="29" />
-                            <line x1="35.2" y1="33" x2="32.8" y2="31.8" />
-                            <line x1="32.8" y1="36.5" x2="30.8" y2="34.8" />
-                            <line x1="29.5" y1="39.2" x2="28.2" y2="37.2" />
-                        </g>
-                        <path
-                            d="M26,21 C26,21 22,18 22,15.5 C22,13.5 23.5,12 25,12 C25.5,12 26,12.3 26,12.3 C26,12.3 26.5,12 27,12 C28.5,12 30,13.5 30,15.5 C30,18 26,21 26,21Z"
-                            fill="#c9184a" opacity="0.85" />
-                    </svg>
+                    <img src="assets/logo.png" alt="CuoriInCoincidenza" />
                 </div>
 
                 <!-- Bottom Right -->
                 <div class="corner-heart corner-heart--br">
-                    <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26,44 C26,44 6,30 6,18 C6,12 10,8 15,8 C19,8 23,10 26,14 C29,10 33,8 37,8 C42,8 46,12 46,18 C46,30 26,44 26,44 Z"
-                            stroke="#4a7a85" stroke-width="2.2" fill="#d4eaf0" opacity="0.85" />
-                        <path
-                            d="M26,38 C26,38 11,26 11,18 C11,14 14,11 18,11 C21.5,11 24,13 26,16.5 C28,13 30.5,11 34,11 C38,11 41,14 41,18 C41,26 26,38 26,38 Z"
-                            stroke="#4a7a85" stroke-width="1.5" fill="none" opacity="0.6" />
-                        <g stroke="#8b4c3c" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
-                            <line x1="26" y1="15.5" x2="26" y2="18.5" />
-                            <line x1="22.5" y1="16.5" x2="23.5" y2="19.2" />
-                            <line x1="19.5" y1="18.5" x2="21.2" y2="20.8" />
-                            <line x1="17.2" y1="21.5" x2="19.5" y2="23" />
-                            <line x1="15.8" y1="25" x2="18.5" y2="25.8" />
-                            <line x1="15.5" y1="29" x2="18.2" y2="29" />
-                            <line x1="16.8" y1="33" x2="19.2" y2="31.8" />
-                            <line x1="19.2" y1="36.5" x2="21.2" y2="34.8" />
-                            <line x1="22.5" y1="39.2" x2="23.8" y2="37.2" />
-                            <line x1="29.5" y1="16.5" x2="28.5" y2="19.2" />
-                            <line x1="32.5" y1="18.5" x2="30.8" y2="20.8" />
-                            <line x1="34.8" y1="21.5" x2="32.5" y2="23" />
-                            <line x1="36.2" y1="25" x2="33.5" y2="25.8" />
-                            <line x1="36.5" y1="29" x2="33.8" y2="29" />
-                            <line x1="35.2" y1="33" x2="32.8" y2="31.8" />
-                            <line x1="32.8" y1="36.5" x2="30.8" y2="34.8" />
-                            <line x1="29.5" y1="39.2" x2="28.2" y2="37.2" />
-                        </g>
-                        <path
-                            d="M26,21 C26,21 22,18 22,15.5 C22,13.5 23.5,12 25,12 C25.5,12 26,12.3 26,12.3 C26,12.3 26.5,12 27,12 C28.5,12 30,13.5 30,15.5 C30,18 26,21 26,21Z"
-                            fill="#c9184a" opacity="0.85" />
-                    </svg>
+                    <img src="assets/logo.png" alt="CuoriInCoincidenza" />
                 </div>
-
 
                 <!-- Story content (dynamically loaded by JS) -->
 
